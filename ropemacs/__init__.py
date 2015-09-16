@@ -260,7 +260,7 @@ the rope-marker-ring")
             lineno = str(location.lineno)
             offset = str(location.offset)
 
-            lisp.insert(filename + ":" + lineno + ":" + code_line + " " + offset)
+            lisp.insert(filename + " : " + lineno + ":" + code_line + " " + offset)
 
             beginning = lisp.line_beginning_position()
             end = beginning + len(filename)
